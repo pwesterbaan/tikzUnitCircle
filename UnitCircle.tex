@@ -5,8 +5,8 @@
 \extrawidth{1.25in}
 % ----------------------------------------------------------------
 \runningfooter{}{}{}
-\newcommand{\aRad}{0.575}
-\newcommand{\rRad}{0.89}
+\newcommand{\aRad}{0.625}
+\newcommand{\rRad}{0.91}
 \newcommand{\cRad}{1.2}
 \newcommand{\lCol}{gray!90}
 \newcommand{\unitCircleGraph}{
@@ -22,14 +22,14 @@
         % lines from center to point
         \draw[\lCol] (0cm,0cm) -- (\x:1);
         % draw each angle in degrees
-        \ifprintanswers\draw (\x:\aRad) node[fill=white] {$\x^\circ$};\fi
+        \ifprintanswers\draw (\x:\aRad) node[fill=white, inner sep=2.5pt] {$\x^\circ$};\fi
         }
         
       \foreach \x in {45,135,225,315} {
         % lines from center to point
         \draw[\lCol] (0cm,0cm) -- (\x:1);
         % draw each angle in degrees
-        \ifprintanswers\draw (\x:\aRad) node[fill=white] {$\x^\circ$};\fi
+        \ifprintanswers\draw (\x:\aRad) node[fill=white, inner sep=2.5pt] {$\x^\circ$};\fi
         }
       \ifprintanswers\foreach \x/\xtext in {
         30/\frac{\pi}{6},
@@ -48,7 +48,7 @@
         315/\frac{7\pi}{4},
         330/\frac{11\pi}{6},
         360/2\pi}
-        \draw (\x:\rRad) node[fill=white] {$\xtext$};
+        \draw (\x:\rRad) node[fill=white, inner sep=2.5pt] {$\xtext$};
     \foreach \x/\xtext/\y in {
       % the coordinates for the first quadrant
       30/\frac{\sqrt{3}}{2}/\frac{1}{2},
